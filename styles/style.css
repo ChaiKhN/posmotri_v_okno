@@ -127,7 +127,7 @@ video {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 0.94em;
   text-transform: uppercase;
   color: #fff;
 }
@@ -266,8 +266,8 @@ fieldset {
   background-color: #fff;
   width: 15px;
   height: 15px;
-  position: absolute;
   margin: 0 auto;
+  display: block;
 }
 
 .search-form__checkbox:has(:focus-visible) {
