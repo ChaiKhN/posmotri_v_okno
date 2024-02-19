@@ -19,6 +19,7 @@ html {
   display: flex;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 
 h1,
@@ -55,7 +56,6 @@ ol {
   align-items: flex-start;
   gap: 40px;
   width: 711px;
-  min-height: 54px;
 }
 
 .content__list {
@@ -70,6 +70,14 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  margin-bottom: auto;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin-top: 77px;
+  inline-size: 711px;
 }
 
 .result__video-container {
@@ -152,7 +160,9 @@ video {
   line-height: 100%;
   color: #fff;
   max-width: 200px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -162,7 +172,7 @@ video {
   line-height: 16.2px;
   color: #fff;
   max-width: 200px;
-  white-space: nowrap;
+  white-space: wrap;
 }
 
 .content__card-link:hover {
@@ -219,7 +229,6 @@ fieldset {
 .search-form__checkbox-list {
   display: inline-flex;
   justify-content: space-around;
-  min-height: 22px;
   gap: 15px;  
 }
 
@@ -283,6 +292,10 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
 }
 
 button:active {
